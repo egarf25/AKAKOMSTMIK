@@ -25,7 +25,14 @@
             android:label="@string/title_activity_jurusan"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".BeritaActivity"></activity>
+        <activity android:name=".BeritaActivity" />
+        <activity android:name=".BottomMenu.BottomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

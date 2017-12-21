@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import egaakakom.gmail.com.akakomstmik.BottomMenu.BottomActivity;
+
 public class BerandaActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -84,10 +86,10 @@ public class BerandaActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_beranda) {
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, BottomActivity.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_profile) {
+        } else if (id == R.id.nav_profil) {
             Intent i = new Intent(this, DetProfileActivity.class);
             startActivity(i);
 
@@ -101,7 +103,7 @@ public class BerandaActivity extends AppCompatActivity
             Intent i = new Intent(this, BeritaActivity.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_instagram) {
 
         }
 
